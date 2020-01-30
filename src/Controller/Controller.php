@@ -12,11 +12,8 @@ class Controller extends AbstractController
      */
     public function index()
     {
-        $number = random_int(0, 100);
         return $this->render('/index.html.twig', [
-            'controller_name' => 'Mundo',
-            'number' => $number,
+            'controller_name' => 'Controller',
         ]);
     }
-    
 }

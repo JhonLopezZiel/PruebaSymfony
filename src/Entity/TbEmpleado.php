@@ -12,6 +12,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class TbEmpleado
 {
+
+    const RESPUESTA_EXITOSA = "Registro Exitoso";
     /**
      * @var int
      *
@@ -32,6 +34,7 @@ class TbEmpleado
     {
         return $this->empleadoCodigo;
     }
+
 
     public function getEmpleadoNombrecompleto(): ?string
     {
